@@ -106,7 +106,8 @@ Workflow em `.github/workflows/build.yml` (executa `./mvnw -B clean verify` e pu
 `jacoco-maven-plugin` 0.8.15 (`prepare-agent` + `report` em `verify`) porque o workflow faz upload de
 `target/site/jacoco/**`. O `mvnw` foi marcado como executável (`git update-index --chmod=+x mvnw`).
 
-Execução: _(colocar aqui o URL da execução no GitHub Actions)_
+Execução bem-sucedida (verde, artefacto `fleetcheck-build`): https://github.com/RodriMonteiroM/fleetcheck-maven/actions/runs/37233973351
+Repositório: https://github.com/RodriMonteiroM/fleetcheck-maven
 
 ### Passo 7 – SBOM (CycloneDX)
 `mvnw.cmd clean verify` gera `target/bom.json`, que contém `jackson-databind`, `jackson-core` e
